@@ -1,0 +1,43 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+   // one-dimensional array
+   int arr1[5] = {1, 2, 3, 4, 5};
+   int i;
+
+   printf("One-dimensional array:\n");
+   for (i = 0; i < 5; i++) {
+      printf("%d ", arr1[i]);
+   }
+   printf("\n");
+
+   // two-dimensional array
+   int arr2[3][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+
+   printf("Two-dimensional array:\n");
+   for (i = 0; i < 3; i++) {
+      int j;
+      for (j = 0; j < 3; j++) {
+         printf("%d ", arr2[i][j]);
+      }
+      printf("\n");
+   }
+
+   // string
+   char str1[6] = "Hello";
+   char str2[6] = "World";
+   char str3[12];
+
+   printf("String:\n");
+   printf("str1: %s\n", str1);
+   printf("str2: %s\n", str2);
+
+   // concatenate strings
+   strcpy(str3, str1);
+   strcat(str3, " ");
+   strcat(str3, str2);
+   printf("str3: %s\n", str3);
+
+   return 0;
+}
